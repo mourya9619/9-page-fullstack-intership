@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Archive and Deletion Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment Archive and Deletion</h1>
+
+        <!-- Archive Assessment Option -->
+        <div class="settings-section">
+            <h2>Archive Assessment</h2>
+            <button onclick="archiveAssessment()">Archive Assessment</button>
+            <p id="archive-status"></p>
+        </div>
+
+        <!-- Deletion Warning -->
+        <div class="settings-section">
+            <h2>Delete Assessment</h2>
+            <p class="warning-text">Warning: Deleting an assessment is permanent and cannot be undone. All data, including student responses and grades, will be lost.</p>
+            <input type="text" id="delete-confirmation" placeholder="Type assessment title to confirm deletion">
+            <button onclick="confirmDeletion()">Confirm Deletion</button>
+        </div>
+
+        <!-- Restore Archived Assessment -->
+        <div class="settings-section">
+            <h2>Restore Archived Assessment</h2>
+            <button onclick="restoreAssessment()">Restore Assessment</button>
+            <p id="restore-status"></p>
+        </div>
+
+        <!-- Export Assessment Data -->
+        <div class="settings-section">
+            <h2>Export Assessment Data</h2>
+            <button onclick="exportData()">Export Data</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
